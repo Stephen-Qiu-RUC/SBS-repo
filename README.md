@@ -179,3 +179,15 @@ python train/train_llama.py --exp_name <project_name_for_wandb> --dataset_path <
 >*user utterance 2 Score: ..*<|eot_id|><|start_header_id|>assistant<|end_header_id|>
 >
 >*bot utterance 2*<|eot_id|>
+
+## BibTeX
+
+```
+@inproceedings{saggar2025,
+  author    = {Saggar, Arpita and Darling, Jonathan C. and Dimitrova, Vania and Sarikaya, Duygu and Hogg, David C.},
+  title     = {Score Before You Speak: Improving Persona Consistency in Dialogue Generation using Response Quality Scores},
+  booktitle = {Proceedings of the 28th European Conference on Artificial Intelligence},
+  year      = {2025},
+  url = {https://ebooks.iospress.nl/volumearticle/75972},
+}
+```
