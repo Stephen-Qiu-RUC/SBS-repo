@@ -1,0 +1,31 @@
+# 数据集
+data/
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.egg-info/
+.eggs/
+dist/
+build/
+
+# 虚拟环境
+.venv/
+venv/
+env/
+
+# IDE
+.vscode/
+.idea/
+
+# 个人配置
+.claude/settings.local.json
+
+# 模型文件
+*.pth
+*.pt
+*.bin
+*.safetensors
+checkpoint-*/
+output/
