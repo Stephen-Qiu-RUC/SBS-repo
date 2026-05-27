@@ -15,6 +15,7 @@
 输出: {split}_masked.json，包含每个 persona 句子的原句和 mask 填空变体
 """
 
+import torch
 from pathlib import Path
 from transformers import BartForConditionalGeneration, BartTokenizer
 import random
@@ -69,37 +70,41 @@ def main(file_path):
         forced_bos_token_id=0  # 强制使用 BOS token 作为起始
     )
     tok = BartTokenizer.from_pretrained("facebook/bart-large")
-    model = model.to(device)
+    model = model.half().to(device)  # FP16 减少一半显存
+    model.eval()
 
     filled_masks = []
-    batch_size = 500  # 批量大小，平衡速度和显存占用
+    batch_size = 32  # 小 batch 避免 OOM（8GB 显存 + beam search）
 
-    # 分批处理，避免一次性加载过多数据到 GPU
     for idx in tqdm(range(0, len(empty_masks), batch_size)):
-        if idx + batch_size >= len(empty_masks):
-            end_idx = len(empty_masks)
-        else:
-            end_idx = idx + batch_size
+        end_idx = min(idx + batch_size, len(empty_masks))
 
-        # 对当前批次进行 tokenize 并移到 GPU
         batch = tok(
-            empty_masks[idx:idx + batch_size],
+            empty_masks[idx:end_idx],
             padding=True,
             return_tensors="pt"
         ).to(device)
 
-        # 生成填空结果
-        # num_return_sequences=2: 每个 mask 句子生成2个候选结果
-        # max_new_tokens: 限制生成的最大 token 数，基于输入长度 + 5 留有余量
-        generated_ids = model.generate(
-            batch["input_ids"],
-            num_return_sequences=2,
-            max_new_tokens=5 + batch['input_ids'].size(1)
-        )
+        with torch.no_grad():
+            generated_ids = model.generate(
+                batch["input_ids"],
+                attention_mask=batch["attention_mask"],
+                num_beams=2,
+                num_return_sequences=2,
+                max_new_tokens=5 + batch['input_ids'].size(1),
+                early_stopping=True,
+            )
 
-        # 解码生成的 token ID 为文本
         sequences = tok.batch_decode(generated_ids, skip_special_tokens=True)
         filled_masks.extend(sequences)
+
+        # 每个 batch 后清理显存缓存，避免碎片化累积
+        torch.cuda.empty_cache()
+
+    # 释放不再需要的 mask 输入和模型
+    del empty_masks
+    del model, tok
+    torch.cuda.empty_cache()
 
     # 4. 将填空结果与原始数据合并
     i = 0  # 追踪当前在 filled_masks 中的位置
@@ -148,6 +153,9 @@ def main(file_path):
         # 删除不再需要的词性标注信息，减小文件大小
         del chat['persona_postags']
         chat['aug_data'] = all_masked
+
+    # 填空结果已全部合并进 data，释放中间列表
+    del filled_masks
 
     # 5. 保存结果
     split = Path(file_path).parts[-1].split('_')[0]

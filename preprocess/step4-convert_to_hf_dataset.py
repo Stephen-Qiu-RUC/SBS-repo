@@ -105,13 +105,14 @@ def dpgt_dataset(data):
             continue
 
         for aug in chat['aug_data']:
-            # 找到原始回复的索引，复制其 persona 和 history
-            idx = responses.index(aug['original'])
             for masked in aug['masked']:
-                personas.append(personas[idx])
-                histories.append(histories[idx])
+                # 复用当前 conversation 第一个 response 的 persona 和 history
+                # 同一 conversation 的所有 response 共享同一 persona
+                base_idx = len(personas) - len(chat['responses'])
+                personas.append(personas[base_idx])
+                histories.append(histories[base_idx])
                 responses.append(masked['sent'])
-                scores.append(masked['score'])  # 变体的 BERTScore 分数
+                scores.append(masked['score'])
 
         # 确保所有列表长度一致
         assert len(personas) == len(responses) == len(histories) == len(scores), \
@@ -201,10 +202,10 @@ def llama_dataset(data):
         scores.extend([1.0] * len(chat['responses']))
 
         for aug in chat['aug_data']:
-            idx = responses.index(aug['original'])
             for masked in aug['masked']:
-                personas.append(personas[idx])
-                histories.append(histories[idx])
+                base_idx = len(personas) - len(chat['responses'])
+                personas.append(personas[base_idx])
+                histories.append(histories[base_idx])
                 responses.append(masked['sent'])
                 scores.append(masked['score'])
 

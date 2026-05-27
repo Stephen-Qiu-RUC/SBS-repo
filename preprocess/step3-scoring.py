@@ -68,16 +68,30 @@ def main(file_path):
     scorer = BERTScorer(
         lang="en",
         rescale_with_baseline=True,
-        model_type="microsoft/deberta-xlarge-mnli"
+        model_type="microsoft/deberta-xlarge-mnli",
+        device="cuda",
     )
 
-    # 4. 逐对话计算 BERTScore F1 分数
-    #    BERTScore 返回 (Precision, Recall, F1) 三元组
-    #    我们使用 F1 作为综合质量指标
+    # 4. 逐对话计算 BERTScore F1 分数，对每个对话内部再做 sub-batch
+    #    避免单次处理过多 pair 导致 deberta-xlarge 在 GPU 上 OOM
+    SUB_BATCH_SIZE = 64
     fscores = []
     for i in tqdm(range(len(refs))):
-        P, R, F1 = scorer.score(cands[i], refs[i])
-        fscores.append(F1.tolist())  # 将 tensor 转换为 Python list
+        ref_i = refs[i]
+        cand_i = cands[i]
+        f1_chunks = []
+        for j in range(0, len(ref_i), SUB_BATCH_SIZE):
+            end = min(j + SUB_BATCH_SIZE, len(ref_i))
+            _, _, F1_chunk = scorer.score(cand_i[j:end], ref_i[j:end])
+            f1_chunks.append(F1_chunk.tolist())
+        # 合并 sub-batch 结果
+        flat = []
+        for chunk in f1_chunks:
+            flat.extend(chunk)
+        fscores.append(flat)
+
+    # 释放不再需要的中间数据
+    del refs, cands, scorer
 
     # 5. 将分数合并回数据结构
     #    每个 masked 句子新增 'score' 字段

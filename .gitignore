@@ -29,3 +29,13 @@ env/
 *.safetensors
 checkpoint-*/
 output/
+*.wandb
+*.arrow
+wandb/
+
+# 预处理得到的.json文件
+*.json
+
+# 日志文件
+*.log
+

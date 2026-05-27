@@ -21,6 +21,41 @@ pip install stanza
 pip install bert-score
 ```
 
+## 一键运行
+
+项目提供了 `run.sh` 脚本用于一键完成数据预处理和训练：
+
+```bash
+# 完整复现: 预处理 + 训练 (PERSONA-CHAT + DialoGPT)
+bash run.sh
+
+# 指定数据集和模型
+bash run.sh --dataset convai2 --model dgpt --epochs 6
+bash run.sh --dataset personachat --model llama --epochs 3
+
+# 只预处理，不训练
+bash run.sh --steps preprocess
+
+# 只训练 (需要有预处理好的数据)
+bash run.sh --steps train --model dgpt --epochs 15
+
+# 自定义输出路径
+bash run.sh --output models/my_experiment
+
+# 查看所有选项
+bash run.sh --help
+```
+
+| 参数 | 说明 | 默认值 |
+|------|------|--------|
+| `--dataset` | 数据集: `personachat` / `convai2` | `personachat` |
+| `--model` | 模型: `dgpt` / `llama` | `dgpt` |
+| `--epochs` | 训练轮数 | dgpt+personachat=15, dgpt+convai2=6, llama+personachat=3, llama+convai2=2 |
+| `--output` | 模型保存路径 | `models/<dataset>_<model>` |
+| `--steps` | 执行步骤: `all` / `preprocess` / `train` | `all` |
+
+脚本会自动跳过已生成的中间文件，如果某一步被中断，重新运行会从断点继续。
+
 ## 数据
 
 PERSONA-CHAT 和 ConvAI2 数据集可通过 [ParlAI](https://github.com/facebookresearch/ParlAI) 获取。我们使用两个数据集所有划分的 `<split>_self_original.txt` 文件。
@@ -179,6 +214,65 @@ python train/train_llama.py --exp_name <wandb项目名称> --dataset_path <HF数
 >*用户话语 2 Score: ..*<|eot_id|><|start_header_id|>assistant<|end_header_id|>
 >
 >*机器人话语 2*<|eot_id|>
+
+## 评估
+
+训练完成后，使用 `evaluate/` 目录下的脚本在测试集上运行推理和评估。
+
+### 推理生成
+
+```bash
+# 默认: score=1.0, beam search 解码
+python evaluate/generate.py \
+    --model_path models/personachat_dgpt \
+    --test_data test_scores.json \
+    --output outputs/generations.json
+
+# 论文 Table 4: 不同 score 值对生成质量的影响
+python evaluate/generate.py \
+    --model_path models/personachat_dgpt \
+    --test_data test_scores.json \
+    --scores 1.0 0.95 0.9 0.85 0.8 0.75 \
+    --output outputs/gen
+
+# 论文 Table 3: 消融实验（去掉 prompt 中的 Score）
+python evaluate/generate.py \
+    --model_path models/personachat_dgpt \
+    --test_data test_scores.json \
+    --no_score \
+    --output outputs/gen_no_score
+```
+
+### 计算指标
+
+```bash
+# 单个结果文件
+python evaluate/compute_metrics.py --input outputs/generations.json
+
+# 多个 score 值对比（输出论文风格表格）
+python evaluate/compute_metrics.py \
+    --input outputs/gen_score_1.0.json \
+            outputs/gen_score_0.95.json \
+            outputs/gen_score_0.9.json \
+    --output results_table.md
+```
+
+### 评估指标说明
+
+| 指标 | 含义 | 方向 |
+|------|------|------|
+| PPL | 困惑度，模型对参考回复的预测能力 | 越低越好 |
+| BLEU-1/2/3/4 | n-gram 与参考回复的重叠度 | 越高越好 |
+| Dist-1, Dist-2 | 不同 n-gram 占比，衡量生成多样性 | 越高越好 |
+| Ent-1, Ent-2 | n-gram 分布熵，衡量词汇丰富度 | 越高越好 |
+| C (Coverage) | 参考回复 n-gram 的覆盖率 (%) | 越高越好 |
+
+### 一键评估（通过 run.sh）
+
+```bash
+bash run.sh --steps evaluate --output models/personachat_dgpt
+bash run.sh --steps evaluate --eval_scores "1.0 0.95 0.9"
+```
 
 ## BibTeX
 

@@ -116,11 +116,11 @@ def main(file_path):
     # 3. 初始化 Stanza 流水线
     # - 语言: 英语
     # - 处理器: tokenize（分词）, mwt（多词扩展）, pos（词性标注）
-    # - pos_batch_size: 批量大小，用于加速
+    # - pos_batch_size: 3000 足够高效且不会在 8GB 显存的 GPU 上 OOM
     nlp = stanza.Pipeline(
         lang='en',
         processors='tokenize,mwt,pos',
-        use_gpu=False,
+        use_gpu=True,
         pos_batch_size=300000
     )
 
