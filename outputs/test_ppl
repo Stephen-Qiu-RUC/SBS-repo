@@ -1,0 +1,2255 @@
+{
+  "model_path": "models/personachat_dgpt/checkpoint-5125",
+  "model_type": "dgpt",
+  "test_data": "test_scores_mini.json",
+  "score": 1.0,
+  "no_score": false,
+  "do_sample": false,
+  "num_generations": 79,
+  "skipped": 0,
+  "avg_ppl": 4460.99,
+  "generations": [
+    {
+      "dialogue_idx": 0,
+      "turn_idx": 0,
+      "persona": [
+        "i love to meet new people.",
+        "i have a turtle named timothy.",
+        "my favorite sport is ultimate frisbee.",
+        "my parents are living in bora bora.",
+        "autumn is my favorite season."
+      ],
+      "context": {
+        "queries": [
+          "hello , how are you doing tonight ?"
+        ],
+        "responses": []
+      },
+      "reference": "i am well an loving this interaction how are you ?",
+      "generated": "::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::",
+      "score": 1.0,
+      "ppl": 11406.61
+    },
+    {
+      "dialogue_idx": 0,
+      "turn_idx": 1,
+      "persona": [
+        "i love to meet new people.",
+        "i have a turtle named timothy.",
+        "my favorite sport is ultimate frisbee.",
+        "my parents are living in bora bora.",
+        "autumn is my favorite season."
+      ],
+      "context": {
+        "queries": [
+          "hello , how are you doing tonight ?",
+          "i am great . i just got back from the club ."
+        ],
+        "responses": [
+          "i am well an loving this interaction how are you ?"
+        ]
+      },
+      "reference": "this is my favorite time of the year season wise",
+      "generated": "1.0Bot: 1: 1: 1: 1: 1: 1: 1: 1: 1: 1: 1: 1: 1: 1: 1: 1: 1: 1: 1: 1: 1: 1: 1: 1: 1: 1: 1: 1: 1:",
+      "score": 1.0,
+      "ppl": 4212.08
+    },
+    {
+      "dialogue_idx": 0,
+      "turn_idx": 2,
+      "persona": [
+        "i love to meet new people.",
+        "i have a turtle named timothy.",
+        "my favorite sport is ultimate frisbee.",
+        "my parents are living in bora bora.",
+        "autumn is my favorite season."
+      ],
+      "context": {
+        "queries": [
+          "hello , how are you doing tonight ?",
+          "i am great . i just got back from the club .",
+          "i would rather eat chocolate cake during this season ."
+        ],
+        "responses": [
+          "i am well an loving this interaction how are you ?",
+          "this is my favorite time of the year season wise"
+        ]
+      },
+      "reference": "what club did you go to ? me an timothy watched tv",
+      "generated": ":::::::: 1.0Bot: i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i",
+      "score": 1.0,
+      "ppl": 13727.05
+    },
+    {
+      "dialogue_idx": 0,
+      "turn_idx": 3,
+      "persona": [
+        "i love to meet new people.",
+        "i have a turtle named timothy.",
+        "my favorite sport is ultimate frisbee.",
+        "my parents are living in bora bora.",
+        "autumn is my favorite season."
+      ],
+      "context": {
+        "queries": [
+          "hello , how are you doing tonight ?",
+          "i am great . i just got back from the club .",
+          "i would rather eat chocolate cake during this season .",
+          "i went to club chino . what show are you watching ?"
+        ],
+        "responses": [
+          "i am well an loving this interaction how are you ?",
+          "this is my favorite time of the year season wise",
+          "what club did you go to ? me an timothy watched tv"
+        ]
+      },
+      "reference": "lol oh okay kind of random",
+      "generated": "1.0Bot: 1.0Bot: 1.0Bot: 1.0Bot: 1.0Bot: 1.0Bot: 1.0Bot: 1.0Bot: 1.0Bot: 1.0Bot: i have a turtle",
+      "score": 1.0,
+      "ppl": 5465.36
+    },
+    {
+      "dialogue_idx": 0,
+      "turn_idx": 4,
+      "persona": [
+        "i love to meet new people.",
+        "i have a turtle named timothy.",
+        "my favorite sport is ultimate frisbee.",
+        "my parents are living in bora bora.",
+        "autumn is my favorite season."
+      ],
+      "context": {
+        "queries": [
+          "hello , how are you doing tonight ?",
+          "i am great . i just got back from the club .",
+          "i would rather eat chocolate cake during this season .",
+          "i went to club chino . what show are you watching ?",
+          "do you live in a house or apartment ?"
+        ],
+        "responses": [
+          "i am well an loving this interaction how are you ?",
+          "this is my favorite time of the year season wise",
+          "what club did you go to ? me an timothy watched tv",
+          "lol oh okay kind of random"
+        ]
+      },
+      "reference": "we watched a show about animals like him",
+      "generated": "1.0Bot: 1.0Bot: 1.0Bot: 1.0Bot: 1.0Bot: 1.0Bot: oh my parents are living in new living in new living in new living in new living in new living in new living in new living in new",
+      "score": 1.0,
+      "ppl": 12945.61
+    },
+    {
+      "dialogue_idx": 0,
+      "turn_idx": 5,
+      "persona": [
+        "i love to meet new people.",
+        "i have a turtle named timothy.",
+        "my favorite sport is ultimate frisbee.",
+        "my parents are living in bora bora.",
+        "autumn is my favorite season."
+      ],
+      "context": {
+        "queries": [
+          "hello , how are you doing tonight ?",
+          "i am great . i just got back from the club .",
+          "i would rather eat chocolate cake during this season .",
+          "i went to club chino . what show are you watching ?",
+          "do you live in a house or apartment ?",
+          "i love those shows . i am really craving cake ."
+        ],
+        "responses": [
+          "i am well an loving this interaction how are you ?",
+          "this is my favorite time of the year season wise",
+          "what club did you go to ? me an timothy watched tv",
+          "lol oh okay kind of random",
+          "we watched a show about animals like him"
+        ]
+      },
+      "reference": "why does that matter any ? i went outdoors to play frisbee",
+      "generated": "1.0Bot: 1.0Bot: hello how are you are you are you are you are you are you are you are you are you are you are you are you are you are you are you are you are you are you are you are you are you are you are you are you are you",
+      "score": 1.0,
+      "ppl": 1426.99
+    },
+    {
+      "dialogue_idx": 0,
+      "turn_idx": 6,
+      "persona": [
+        "i love to meet new people.",
+        "i have a turtle named timothy.",
+        "my favorite sport is ultimate frisbee.",
+        "my parents are living in bora bora.",
+        "autumn is my favorite season."
+      ],
+      "context": {
+        "queries": [
+          "hello , how are you doing tonight ?",
+          "i am great . i just got back from the club .",
+          "i would rather eat chocolate cake during this season .",
+          "i went to club chino . what show are you watching ?",
+          "do you live in a house or apartment ?",
+          "i love those shows . i am really craving cake .",
+          "it matters because i have a sweet tooth ."
+        ],
+        "responses": [
+          "i am well an loving this interaction how are you ?",
+          "this is my favorite time of the year season wise",
+          "what club did you go to ? me an timothy watched tv",
+          "lol oh okay kind of random",
+          "we watched a show about animals like him",
+          "why does that matter any ? i went outdoors to play frisbee"
+        ]
+      },
+      "reference": "so ? lol i want to meet my family at home in bora",
+      "generated": "1.0Bot: 1.0Bot: 1.0Bot: 1.0Bot: 1. i have a turtle named tim. i have a turtle named tim. i have a turtle named tim. i have a turtle named tim. i have a turtle named tim. i have a",
+      "score": 1.0,
+      "ppl": 395.97
+    },
+    {
+      "dialogue_idx": 0,
+      "turn_idx": 7,
+      "persona": [
+        "i love to meet new people.",
+        "i have a turtle named timothy.",
+        "my favorite sport is ultimate frisbee.",
+        "my parents are living in bora bora.",
+        "autumn is my favorite season."
+      ],
+      "context": {
+        "queries": [
+          "hello , how are you doing tonight ?",
+          "i am great . i just got back from the club .",
+          "i would rather eat chocolate cake during this season .",
+          "i went to club chino . what show are you watching ?",
+          "do you live in a house or apartment ?",
+          "i love those shows . i am really craving cake .",
+          "it matters because i have a sweet tooth .",
+          "my family lives in alaska . it is freezing down there ."
+        ],
+        "responses": [
+          "i am well an loving this interaction how are you ?",
+          "this is my favorite time of the year season wise",
+          "what club did you go to ? me an timothy watched tv",
+          "lol oh okay kind of random",
+          "we watched a show about animals like him",
+          "why does that matter any ? i went outdoors to play frisbee",
+          "so ? lol i want to meet my family at home in bora"
+        ]
+      },
+      "reference": "i bet it is oh i could not",
+      "generated": "i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i",
+      "score": 1.0,
+      "ppl": 289.74
+    },
+    {
+      "dialogue_idx": 1,
+      "turn_idx": 0,
+      "persona": [
+        "i drive a ford pickup truck.",
+        "i am very conservative.",
+        "my family lives down the street from me.",
+        "i go to church every sunday.",
+        "i have three guns and love hunting."
+      ],
+      "context": {
+        "queries": [
+          "how are you ? being an old man , i am slowing down these days"
+        ],
+        "responses": []
+      },
+      "reference": "hi , my dad is old as well , they live close to me and i see them often",
+      "generated": "::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::",
+      "score": 1.0,
+      "ppl": 1655.9
+    },
+    {
+      "dialogue_idx": 1,
+      "turn_idx": 1,
+      "persona": [
+        "i drive a ford pickup truck.",
+        "i am very conservative.",
+        "my family lives down the street from me.",
+        "i go to church every sunday.",
+        "i have three guns and love hunting."
+      ],
+      "context": {
+        "queries": [
+          "how are you ? being an old man , i am slowing down these days",
+          "that is a great thing honor your dad with your presence"
+        ],
+        "responses": [
+          "hi , my dad is old as well , they live close to me and i see them often"
+        ]
+      },
+      "reference": "sure , i pick him up for church every sunday with my ford pickup",
+      "generated": "::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::",
+      "score": 1.0,
+      "ppl": 6662.88
+    },
+    {
+      "dialogue_idx": 1,
+      "turn_idx": 2,
+      "persona": [
+        "i drive a ford pickup truck.",
+        "i am very conservative.",
+        "my family lives down the street from me.",
+        "i go to church every sunday.",
+        "i have three guns and love hunting."
+      ],
+      "context": {
+        "queries": [
+          "how are you ? being an old man , i am slowing down these days",
+          "that is a great thing honor your dad with your presence",
+          "sounds wonderful my wheelchair can go very fast on various terrains"
+        ],
+        "responses": [
+          "hi , my dad is old as well , they live close to me and i see them often",
+          "sure , i pick him up for church every sunday with my ford pickup"
+        ]
+      },
+      "reference": "i guess that means you do not go hunting often ? i love hunting , i own 3 guns",
+      "generated": "very fast on various various various various various various various various various various various various various various various various various various various various various various various various various various various various various various various various various various various various various various various various various various various various various various various various various various various various various various various various various various various various various",
+      "score": 1.0,
+      "ppl": 1499.05
+    },
+    {
+      "dialogue_idx": 1,
+      "turn_idx": 3,
+      "persona": [
+        "i drive a ford pickup truck.",
+        "i am very conservative.",
+        "my family lives down the street from me.",
+        "i go to church every sunday.",
+        "i have three guns and love hunting."
+      ],
+      "context": {
+        "queries": [
+          "how are you ? being an old man , i am slowing down these days",
+          "that is a great thing honor your dad with your presence",
+          "sounds wonderful my wheelchair can go very fast on various terrains",
+          "hunting ? i served in the marines , yes i hunt"
+        ],
+        "responses": [
+          "hi , my dad is old as well , they live close to me and i see them often",
+          "sure , i pick him up for church every sunday with my ford pickup",
+          "i guess that means you do not go hunting often ? i love hunting , i own 3 guns"
+        ]
+      },
+      "reference": "yeah me too , i am conservative so i love church and hunting",
+      "generated": "1.0Bot: 1.0Bot: 1.0Bot: sounds wonderful sounds wonderful sounds wonderful sounds wonderful sounds wonderful sounds wonderful sounds wonderful sounds wonderful how wonderful how wonderful how wonderful how wonderful how wonderful how wonderful how wonderful how wonderful how wonderful how wonderful how wonderful how wonderful how wonderful how wonderful how wonderful",
+      "score": 1.0,
+      "ppl": 2973.67
+    },
+    {
+      "dialogue_idx": 1,
+      "turn_idx": 4,
+      "persona": [
+        "i drive a ford pickup truck.",
+        "i am very conservative.",
+        "my family lives down the street from me.",
+        "i go to church every sunday.",
+        "i have three guns and love hunting."
+      ],
+      "context": {
+        "queries": [
+          "how are you ? being an old man , i am slowing down these days",
+          "that is a great thing honor your dad with your presence",
+          "sounds wonderful my wheelchair can go very fast on various terrains",
+          "hunting ? i served in the marines , yes i hunt",
+          "what do you like to hunt ? do you ever fish ?"
+        ],
+        "responses": [
+          "hi , my dad is old as well , they live close to me and i see them often",
+          "sure , i pick him up for church every sunday with my ford pickup",
+          "i guess that means you do not go hunting often ? i love hunting , i own 3 guns",
+          "yeah me too , i am conservative so i love church and hunting"
+        ]
+      },
+      "reference": "fishing is good . i love fishing as well",
+      "generated": "me too conservative me too conservative. i am too conservative fish too conservative fish too conservative fish too conservative fish too conservative fish too conservative fish too conservative fish too conservative fish too conservative fish too conservative fish too conservative fish too conservative fish. i am very conservative. i am very conservative. i am very conservative. i am very",
+      "score": 1.0,
+      "ppl": 122.77
+    },
+    {
+      "dialogue_idx": 1,
+      "turn_idx": 5,
+      "persona": [
+        "i drive a ford pickup truck.",
+        "i am very conservative.",
+        "my family lives down the street from me.",
+        "i go to church every sunday.",
+        "i have three guns and love hunting."
+      ],
+      "context": {
+        "queries": [
+          "how are you ? being an old man , i am slowing down these days",
+          "that is a great thing honor your dad with your presence",
+          "sounds wonderful my wheelchair can go very fast on various terrains",
+          "hunting ? i served in the marines , yes i hunt",
+          "what do you like to hunt ? do you ever fish ?",
+          "fishing is a better choice sometimes for my one leg"
+        ],
+        "responses": [
+          "hi , my dad is old as well , they live close to me and i see them often",
+          "sure , i pick him up for church every sunday with my ford pickup",
+          "i guess that means you do not go hunting often ? i love hunting , i own 3 guns",
+          "yeah me too , i am conservative so i love church and hunting",
+          "fishing is good . i love fishing as well"
+        ]
+      },
+      "reference": "yes that must be hard , i hope things get better for you",
+      "generated": "1.0Bot: 1.0Bot: 1.0Bot: 1.0Bot: 1.0Bot: ford ford ford ford ford ford ford ford ford ford ford ford ford ford ford ford ford",
+      "score": 1.0,
+      "ppl": 657.12
+    },
+    {
+      "dialogue_idx": 1,
+      "turn_idx": 6,
+      "persona": [
+        "i drive a ford pickup truck.",
+        "i am very conservative.",
+        "my family lives down the street from me.",
+        "i go to church every sunday.",
+        "i have three guns and love hunting."
+      ],
+      "context": {
+        "queries": [
+          "how are you ? being an old man , i am slowing down these days",
+          "that is a great thing honor your dad with your presence",
+          "sounds wonderful my wheelchair can go very fast on various terrains",
+          "hunting ? i served in the marines , yes i hunt",
+          "what do you like to hunt ? do you ever fish ?",
+          "fishing is a better choice sometimes for my one leg",
+          "i enjoy life , it is what it is these days ."
+        ],
+        "responses": [
+          "hi , my dad is old as well , they live close to me and i see them often",
+          "sure , i pick him up for church every sunday with my ford pickup",
+          "i guess that means you do not go hunting often ? i love hunting , i own 3 guns",
+          "yeah me too , i am conservative so i love church and hunting",
+          "fishing is good . i love fishing as well",
+          "yes that must be hard , i hope things get better for you"
+        ]
+      },
+      "reference": "yes i agree . i try to enjoy life too , whenever i am not working",
+      "generated": "ford trucks ford trucks trucks trucks trucks trucks trucks trucks trucks trucks trucks trucks trucks trucks trucks trucks trucks trucks trucks trucks trucks trucks trucks trucks trucks trucks trucks trucks trucks trucks trucks trucks trucks trucks trucks trucks trucks trucks trucks trucks trucks trucks trucks trucks trucks trucks trucks trucks trucks trucks trucks trucks trucks trucks trucks trucks trucks trucks trucks trucks",
+      "score": 1.0,
+      "ppl": 286.04
+    },
+    {
+      "dialogue_idx": 1,
+      "turn_idx": 7,
+      "persona": [
+        "i drive a ford pickup truck.",
+        "i am very conservative.",
+        "my family lives down the street from me.",
+        "i go to church every sunday.",
+        "i have three guns and love hunting."
+      ],
+      "context": {
+        "queries": [
+          "how are you ? being an old man , i am slowing down these days",
+          "that is a great thing honor your dad with your presence",
+          "sounds wonderful my wheelchair can go very fast on various terrains",
+          "hunting ? i served in the marines , yes i hunt",
+          "what do you like to hunt ? do you ever fish ?",
+          "fishing is a better choice sometimes for my one leg",
+          "i enjoy life , it is what it is these days .",
+          "well , you better enjoying working so you can enjoy more of your time ."
+        ],
+        "responses": [
+          "hi , my dad is old as well , they live close to me and i see them often",
+          "sure , i pick him up for church every sunday with my ford pickup",
+          "i guess that means you do not go hunting often ? i love hunting , i own 3 guns",
+          "yeah me too , i am conservative so i love church and hunting",
+          "fishing is good . i love fishing as well",
+          "yes that must be hard , i hope things get better for you",
+          "yes i agree . i try to enjoy life too , whenever i am not working"
+        ]
+      },
+      "reference": "yeah but i go to church every sunday so my weekends are usually booked",
+      "generated": "1.0Bot: 1.0Bot: 1.0Bot: 1.0Bot: 1.",
+      "score": 1.0,
+      "ppl": 1405.38
+    },
+    {
+      "dialogue_idx": 2,
+      "turn_idx": 0,
+      "persona": [
+        "i have two dogs and one cat.",
+        "i work as a nurses aide in a nursing home.",
+        "i love to ride my bike.",
+        "i love caring for people."
+      ],
+      "context": {
+        "queries": [
+          "hey , are you a student , i traveled a lot , i even studied abroad"
+        ],
+        "responses": []
+      },
+      "reference": "no , i work full time at a nursing home . i am a nurses aide .",
+      "generated": "::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::",
+      "score": 1.0,
+      "ppl": 2460.79
+    },
+    {
+      "dialogue_idx": 2,
+      "turn_idx": 1,
+      "persona": [
+        "i have two dogs and one cat.",
+        "i work as a nurses aide in a nursing home.",
+        "i love to ride my bike.",
+        "i love caring for people."
+      ],
+      "context": {
+        "queries": [
+          "hey , are you a student , i traveled a lot , i even studied abroad",
+          "nice , i just got a advertising job myself . do you like your job ?"
+        ],
+        "responses": [
+          "no , i work full time at a nursing home . i am a nurses aide ."
+        ]
+      },
+      "reference": "nice . yes i do . caring for people is the joy of my life .",
+      "generated": "::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::",
+      "score": 1.0,
+      "ppl": 5030.47
+    },
+    {
+      "dialogue_idx": 2,
+      "turn_idx": 2,
+      "persona": [
+        "i have two dogs and one cat.",
+        "i work as a nurses aide in a nursing home.",
+        "i love to ride my bike.",
+        "i love caring for people."
+      ],
+      "context": {
+        "queries": [
+          "hey , are you a student , i traveled a lot , i even studied abroad",
+          "nice , i just got a advertising job myself . do you like your job ?",
+          "nice my best friend is a nurse , i knew him since kindergarten"
+        ],
+        "responses": [
+          "no , i work full time at a nursing home . i am a nurses aide .",
+          "nice . yes i do . caring for people is the joy of my life ."
+        ]
+      },
+      "reference": "very cool . do you have pets ?",
+      "generated": "i knew him since i knew him since i knew him since i knew him since i knew him since i knew him since i knew him since i knew him since i knew him since i knew him since i knew him since i knew him since i knew him since i knew him since i knew him since i knew him since",
+      "score": 1.0,
+      "ppl": 639.58
+    },
+    {
+      "dialogue_idx": 2,
+      "turn_idx": 3,
+      "persona": [
+        "i have two dogs and one cat.",
+        "i work as a nurses aide in a nursing home.",
+        "i love to ride my bike.",
+        "i love caring for people."
+      ],
+      "context": {
+        "queries": [
+          "hey , are you a student , i traveled a lot , i even studied abroad",
+          "nice , i just got a advertising job myself . do you like your job ?",
+          "nice my best friend is a nurse , i knew him since kindergarten",
+          "no i do not , do you ?"
+        ],
+        "responses": [
+          "no , i work full time at a nursing home . i am a nurses aide .",
+          "nice . yes i do . caring for people is the joy of my life .",
+          "very cool . do you have pets ?"
+        ]
+      },
+      "reference": "yes . two dogs and a cat . they are my babies .",
+      "generated": "1.0Bot: 1.0Bot: 1.0Bot: 1.0Bot: 1.0Bot: 1.0Bot: 1.0Bot: 1.0Bot: hey a student.User: niceScore: 1.0Bot:",
+      "score": 1.0,
+      "ppl": 1178.68
+    },
+    {
+      "dialogue_idx": 2,
+      "turn_idx": 4,
+      "persona": [
+        "i have two dogs and one cat.",
+        "i work as a nurses aide in a nursing home.",
+        "i love to ride my bike.",
+        "i love caring for people."
+      ],
+      "context": {
+        "queries": [
+          "hey , are you a student , i traveled a lot , i even studied abroad",
+          "nice , i just got a advertising job myself . do you like your job ?",
+          "nice my best friend is a nurse , i knew him since kindergarten",
+          "no i do not , do you ?",
+          "nice , where do you live ? i resign in north dakota"
+        ],
+        "responses": [
+          "no , i work full time at a nursing home . i am a nurses aide .",
+          "nice . yes i do . caring for people is the joy of my life .",
+          "very cool . do you have pets ?",
+          "yes . two dogs and a cat . they are my babies ."
+        ]
+      },
+      "reference": "i live in texas . i love riding my bike here .",
+      "generated": "1.0Bot: 1.0Bot: 1.User: a student.User: niceScore: 1.0Bot: 1.0Bot: 1.0Bot: 1.0Bot: niceScore: niceScore: niceScore: niceScore: niceScore",
+      "score": 1.0,
+      "ppl": 753.98
+    },
+    {
+      "dialogue_idx": 2,
+      "turn_idx": 5,
+      "persona": [
+        "i have two dogs and one cat.",
+        "i work as a nurses aide in a nursing home.",
+        "i love to ride my bike.",
+        "i love caring for people."
+      ],
+      "context": {
+        "queries": [
+          "hey , are you a student , i traveled a lot , i even studied abroad",
+          "nice , i just got a advertising job myself . do you like your job ?",
+          "nice my best friend is a nurse , i knew him since kindergarten",
+          "no i do not , do you ?",
+          "nice , where do you live ? i resign in north dakota",
+          "are you a christian ? i am jewish"
+        ],
+        "responses": [
+          "no , i work full time at a nursing home . i am a nurses aide .",
+          "nice . yes i do . caring for people is the joy of my life .",
+          "very cool . do you have pets ?",
+          "yes . two dogs and a cat . they are my babies .",
+          "i live in texas . i love riding my bike here ."
+        ]
+      },
+      "reference": "yes i am . i have always been a christian .",
+      "generated": "i love riding my bike. my bike. my bike. my bike. my bike. my bike. my bike. my bike. my bike. i bike. i work as a nurse. i work as a nurse. i work as a nurse. i work as a nurse. i work as a nurse. i",
+      "score": 1.0,
+      "ppl": 139.86
+    },
+    {
+      "dialogue_idx": 2,
+      "turn_idx": 6,
+      "persona": [
+        "i have two dogs and one cat.",
+        "i work as a nurses aide in a nursing home.",
+        "i love to ride my bike.",
+        "i love caring for people."
+      ],
+      "context": {
+        "queries": [
+          "hey , are you a student , i traveled a lot , i even studied abroad",
+          "nice , i just got a advertising job myself . do you like your job ?",
+          "nice my best friend is a nurse , i knew him since kindergarten",
+          "no i do not , do you ?",
+          "nice , where do you live ? i resign in north dakota",
+          "are you a christian ? i am jewish",
+          "i am jewish but i am not religious all that much"
+        ],
+        "responses": [
+          "no , i work full time at a nursing home . i am a nurses aide .",
+          "nice . yes i do . caring for people is the joy of my life .",
+          "very cool . do you have pets ?",
+          "yes . two dogs and a cat . they are my babies .",
+          "i live in texas . i love riding my bike here .",
+          "yes i am . i have always been a christian ."
+        ]
+      },
+      "reference": "oh really ? so you do not go to church often ?",
+      "generated": "1.0Bot: caring for people is caring for people caring for people caring for people caring for people caring for people caring for people caring for people for people for people for people for people for people for people for people for people for people for people for people for people for people for people for people for people for",
+      "score": 1.0,
+      "ppl": 483.87
+    },
+    {
+      "dialogue_idx": 2,
+      "turn_idx": 7,
+      "persona": [
+        "i have two dogs and one cat.",
+        "i work as a nurses aide in a nursing home.",
+        "i love to ride my bike.",
+        "i love caring for people."
+      ],
+      "context": {
+        "queries": [
+          "hey , are you a student , i traveled a lot , i even studied abroad",
+          "nice , i just got a advertising job myself . do you like your job ?",
+          "nice my best friend is a nurse , i knew him since kindergarten",
+          "no i do not , do you ?",
+          "nice , where do you live ? i resign in north dakota",
+          "are you a christian ? i am jewish",
+          "i am jewish but i am not religious all that much",
+          "i mostly go to the mosque on my free time"
+        ],
+        "responses": [
+          "no , i work full time at a nursing home . i am a nurses aide .",
+          "nice . yes i do . caring for people is the joy of my life .",
+          "very cool . do you have pets ?",
+          "yes . two dogs and a cat . they are my babies .",
+          "i live in texas . i love riding my bike here .",
+          "yes i am . i have always been a christian .",
+          "oh really ? so you do not go to church often ?"
+        ]
+      },
+      "reference": "i see . that is very cool . i enjoy hearing about other practices .",
+      "generated": "1.0Bot: 1.0Bot: 1.0Bot: 1.0Bot: 1.0Bot: 1.0Bot: 1.0Bot: 1.0Bot: 1.Bot: 1.0Bot: 1.Bot:",
+      "score": 1.0,
+      "ppl": 2281.26
+    },
+    {
+      "dialogue_idx": 3,
+      "turn_idx": 0,
+      "persona": [
+        "i am happy being single and alone.",
+        "i only drink water.",
+        "i work in labor and delivery.",
+        "i do not want children."
+      ],
+      "context": {
+        "queries": [
+          "hi want to get to know each other ?"
+        ],
+        "responses": []
+      },
+      "reference": "yes we got to act quickly",
+      "generated": "1.0Bot:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::",
+      "score": 1.0,
+      "ppl": 16552.9
+    },
+    {
+      "dialogue_idx": 3,
+      "turn_idx": 1,
+      "persona": [
+        "i am happy being single and alone.",
+        "i only drink water.",
+        "i work in labor and delivery.",
+        "i do not want children."
+      ],
+      "context": {
+        "queries": [
+          "hi want to get to know each other ?",
+          "i am going for a horse ride tomorrow . do you like horses ?"
+        ],
+        "responses": [
+          "yes we got to act quickly"
+        ]
+      },
+      "reference": "i never have juice , just water .",
+      "generated": "::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::",
+      "score": 1.0,
+      "ppl": 15240.79
+    },
+    {
+      "dialogue_idx": 3,
+      "turn_idx": 2,
+      "persona": [
+        "i am happy being single and alone.",
+        "i only drink water.",
+        "i work in labor and delivery.",
+        "i do not want children."
+      ],
+      "context": {
+        "queries": [
+          "hi want to get to know each other ?",
+          "i am going for a horse ride tomorrow . do you like horses ?",
+          "is that hard for you ? i love sugar"
+        ],
+        "responses": [
+          "yes we got to act quickly",
+          "i never have juice , just water ."
+        ]
+      },
+      "reference": "yes i do i work on the baby floor an i want no kids lol",
+      "generated": "1.0Bot:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::",
+      "score": 1.0,
+      "ppl": 10210.52
+    },
+    {
+      "dialogue_idx": 3,
+      "turn_idx": 3,
+      "persona": [
+        "i am happy being single and alone.",
+        "i only drink water.",
+        "i work in labor and delivery.",
+        "i do not want children."
+      ],
+      "context": {
+        "queries": [
+          "hi want to get to know each other ?",
+          "i am going for a horse ride tomorrow . do you like horses ?",
+          "is that hard for you ? i love sugar",
+          "i am looking forward to retirement"
+        ],
+        "responses": [
+          "yes we got to act quickly",
+          "i never have juice , just water .",
+          "yes i do i work on the baby floor an i want no kids lol"
+        ]
+      },
+      "reference": "no it is easy especially being single an i like it",
+      "generated": "i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i",
+      "score": 1.0,
+      "ppl": 755.26
+    },
+    {
+      "dialogue_idx": 3,
+      "turn_idx": 4,
+      "persona": [
+        "i am happy being single and alone.",
+        "i only drink water.",
+        "i work in labor and delivery.",
+        "i do not want children."
+      ],
+      "context": {
+        "queries": [
+          "hi want to get to know each other ?",
+          "i am going for a horse ride tomorrow . do you like horses ?",
+          "is that hard for you ? i love sugar",
+          "i am looking forward to retirement",
+          "well i have some heath issues , maybe i will try it"
+        ],
+        "responses": [
+          "yes we got to act quickly",
+          "i never have juice , just water .",
+          "yes i do i work on the baby floor an i want no kids lol",
+          "no it is easy especially being single an i like it"
+        ]
+      },
+      "reference": "i do get it i do",
+      "generated": "1.0Bot: 1.0Bot: 1.0Bot: 1.0Bot: 1.0Bot: 1.0Bot: 1.0Bot: 1.0Bot: 1.0Bot: yes i i i i i i i i i",
+      "score": 1.0,
+      "ppl": 96.29
+    },
+    {
+      "dialogue_idx": 3,
+      "turn_idx": 5,
+      "persona": [
+        "i am happy being single and alone.",
+        "i only drink water.",
+        "i work in labor and delivery.",
+        "i do not want children."
+      ],
+      "context": {
+        "queries": [
+          "hi want to get to know each other ?",
+          "i am going for a horse ride tomorrow . do you like horses ?",
+          "is that hard for you ? i love sugar",
+          "i am looking forward to retirement",
+          "well i have some heath issues , maybe i will try it",
+          "will water help my circulation . i have an achy leg"
+        ],
+        "responses": [
+          "yes we got to act quickly",
+          "i never have juice , just water .",
+          "yes i do i work on the baby floor an i want no kids lol",
+          "no it is easy especially being single an i like it",
+          "i do get it i do"
+        ]
+      },
+      "reference": "yes get on it now",
+      "generated": "1.0Bot: 1.0Bot: 1.0Bot: 1.0Bot: 1.0Bot: yes i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i",
+      "score": 1.0,
+      "ppl": 8226.4
+    },
+    {
+      "dialogue_idx": 3,
+      "turn_idx": 6,
+      "persona": [
+        "i am happy being single and alone.",
+        "i only drink water.",
+        "i work in labor and delivery.",
+        "i do not want children."
+      ],
+      "context": {
+        "queries": [
+          "hi want to get to know each other ?",
+          "i am going for a horse ride tomorrow . do you like horses ?",
+          "is that hard for you ? i love sugar",
+          "i am looking forward to retirement",
+          "well i have some heath issues , maybe i will try it",
+          "will water help my circulation . i have an achy leg",
+          "i will thank you for the advice"
+        ],
+        "responses": [
+          "yes we got to act quickly",
+          "i never have juice , just water .",
+          "yes i do i work on the baby floor an i want no kids lol",
+          "no it is easy especially being single an i like it",
+          "i do get it i do",
+          "yes get on it now"
+        ]
+      },
+      "reference": "anytime are you okay now ?",
+      "generated": "1.0Bot: thank you for you want you want you want you want you want you want you want you want you want you want you want you want you want you want you want you want you want you want you want you want you want you want you want you want you want you want you want you",
+      "score": 1.0,
+      "ppl": 2758.65
+    },
+    {
+      "dialogue_idx": 3,
+      "turn_idx": 7,
+      "persona": [
+        "i am happy being single and alone.",
+        "i only drink water.",
+        "i work in labor and delivery.",
+        "i do not want children."
+      ],
+      "context": {
+        "queries": [
+          "hi want to get to know each other ?",
+          "i am going for a horse ride tomorrow . do you like horses ?",
+          "is that hard for you ? i love sugar",
+          "i am looking forward to retirement",
+          "well i have some heath issues , maybe i will try it",
+          "will water help my circulation . i have an achy leg",
+          "i will thank you for the advice",
+          "yeah . it does not hurt oo bad . i still ride"
+        ],
+        "responses": [
+          "yes we got to act quickly",
+          "i never have juice , just water .",
+          "yes i do i work on the baby floor an i want no kids lol",
+          "no it is easy especially being single an i like it",
+          "i do get it i do",
+          "yes get on it now",
+          "anytime are you okay now ?"
+        ]
+      },
+      "reference": "do you where do you go ?",
+      "generated": "are you okay are you okay are okay are okay are okay are okay are okay are okay are okay are okay are okay are okay are okay are okay are okay are okay are okay are okay are okay are okay okay okay okay okay okay okay okay okay okay okay okay okay okay okay okay okay okay okay okay okay okay okay",
+      "score": 1.0,
+      "ppl": 65.66
+    },
+    {
+      "dialogue_idx": 4,
+      "turn_idx": 0,
+      "persona": [
+        "i am afraid of heights.",
+        "i love animals and have two dogs.",
+        "i am native american and live in oklahoma.",
+        "i work as an attorney.",
+        "i am not religious."
+      ],
+      "context": {
+        "queries": [
+          "hey there . how are you ?"
+        ],
+        "responses": []
+      },
+      "reference": "good , do you like animals ?",
+      "generated": "1.0Bot:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::",
+      "score": 1.0,
+      "ppl": 6617.23
+    },
+    {
+      "dialogue_idx": 4,
+      "turn_idx": 1,
+      "persona": [
+        "i am afraid of heights.",
+        "i love animals and have two dogs.",
+        "i am native american and live in oklahoma.",
+        "i work as an attorney.",
+        "i am not religious."
+      ],
+      "context": {
+        "queries": [
+          "hey there . how are you ?",
+          "yeah , i like cats . i have one ."
+        ],
+        "responses": [
+          "good , do you like animals ?"
+        ]
+      },
+      "reference": "i have 2 dogs , they are great , where do you work ?",
+      "generated": "::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::",
+      "score": 1.0,
+      "ppl": 478.53
+    },
+    {
+      "dialogue_idx": 4,
+      "turn_idx": 2,
+      "persona": [
+        "i am afraid of heights.",
+        "i love animals and have two dogs.",
+        "i am native american and live in oklahoma.",
+        "i work as an attorney.",
+        "i am not religious."
+      ],
+      "context": {
+        "queries": [
+          "hey there . how are you ?",
+          "yeah , i like cats . i have one .",
+          "i stay at home with the kids ."
+        ],
+        "responses": [
+          "good , do you like animals ?",
+          "i have 2 dogs , they are great , where do you work ?"
+        ]
+      },
+      "reference": "are you afraid of heights ? i certainly am",
+      "generated": "::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::",
+      "score": 1.0,
+      "ppl": 4741.44
+    },
+    {
+      "dialogue_idx": 4,
+      "turn_idx": 3,
+      "persona": [
+        "i am afraid of heights.",
+        "i love animals and have two dogs.",
+        "i am native american and live in oklahoma.",
+        "i work as an attorney.",
+        "i am not religious."
+      ],
+      "context": {
+        "queries": [
+          "hey there . how are you ?",
+          "yeah , i like cats . i have one .",
+          "i stay at home with the kids .",
+          "no . do you like tv ?"
+        ],
+        "responses": [
+          "good , do you like animals ?",
+          "i have 2 dogs , they are great , where do you work ?",
+          "are you afraid of heights ? i certainly am"
+        ]
+      },
+      "reference": "sure i like tv , what do you watch ?",
+      "generated": "Bot: 1.0Bot: 1.0Bot: 1.0Bot: 1.0Bot: 1.0Bot: 1.0Bot: 1.0Bot: 1.0Bot: 1.0Bot: do you like tv do you like",
+      "score": 1.0,
+      "ppl": 1324.25
+    },
+    {
+      "dialogue_idx": 4,
+      "turn_idx": 4,
+      "persona": [
+        "i am afraid of heights.",
+        "i love animals and have two dogs.",
+        "i am native american and live in oklahoma.",
+        "i work as an attorney.",
+        "i am not religious."
+      ],
+      "context": {
+        "queries": [
+          "hey there . how are you ?",
+          "yeah , i like cats . i have one .",
+          "i stay at home with the kids .",
+          "no . do you like tv ?",
+          "really anything , what about you ?"
+        ],
+        "responses": [
+          "good , do you like animals ?",
+          "i have 2 dogs , they are great , where do you work ?",
+          "are you afraid of heights ? i certainly am",
+          "sure i like tv , what do you watch ?"
+        ]
+      },
+      "reference": "i do not have time to watch tv , i am an attorney so i work alot",
+      "generated": "1.0Bot: 1.0Bot: 1.0Bot: 1.0Bot: 1.0Bot: 1.0Bot: do you like tv do you like tv do you like tv do you like tv do you? do you? do you do you do you",
+      "score": 1.0,
+      "ppl": 469.57
+    },
+    {
+      "dialogue_idx": 4,
+      "turn_idx": 5,
+      "persona": [
+        "i am afraid of heights.",
+        "i love animals and have two dogs.",
+        "i am native american and live in oklahoma.",
+        "i work as an attorney.",
+        "i am not religious."
+      ],
+      "context": {
+        "queries": [
+          "hey there . how are you ?",
+          "yeah , i like cats . i have one .",
+          "i stay at home with the kids .",
+          "no . do you like tv ?",
+          "really anything , what about you ?",
+          "i am not a very active person ."
+        ],
+        "responses": [
+          "good , do you like animals ?",
+          "i have 2 dogs , they are great , where do you work ?",
+          "are you afraid of heights ? i certainly am",
+          "sure i like tv , what do you watch ?",
+          "i do not have time to watch tv , i am an attorney so i work alot"
+        ]
+      },
+      "reference": "i certainly am , i am part native american , i live here in oklahoma",
+      "generated": "1.0Bot: do you do you do you do you do you do you do you do you? do you? do you do you do you do you do you do you do you do you do you do you do you do you do you do you do you do you do you do you do you",
+      "score": 1.0,
+      "ppl": 443.13
+    },
+    {
+      "dialogue_idx": 4,
+      "turn_idx": 6,
+      "persona": [
+        "i am afraid of heights.",
+        "i love animals and have two dogs.",
+        "i am native american and live in oklahoma.",
+        "i work as an attorney.",
+        "i am not religious."
+      ],
+      "context": {
+        "queries": [
+          "hey there . how are you ?",
+          "yeah , i like cats . i have one .",
+          "i stay at home with the kids .",
+          "no . do you like tv ?",
+          "really anything , what about you ?",
+          "i am not a very active person .",
+          "oh . tell me something about yourself ."
+        ],
+        "responses": [
+          "good , do you like animals ?",
+          "i have 2 dogs , they are great , where do you work ?",
+          "are you afraid of heights ? i certainly am",
+          "sure i like tv , what do you watch ?",
+          "i do not have time to watch tv , i am an attorney so i work alot",
+          "i certainly am , i am part native american , i live here in oklahoma"
+        ]
+      },
+      "reference": "well i do not like heights very much and i love animals . what about you ?",
+      "generated": "oh do you like tv do you like tv do you like tv do you like tv do you like tv do you like tv do you like tv do you like tv do you like tv do you like tv do you like tv do you like tv do you do you do you do you do you do you do you do",
+      "score": 1.0,
+      "ppl": 342.98
+    },
+    {
+      "dialogue_idx": 4,
+      "turn_idx": 7,
+      "persona": [
+        "i am afraid of heights.",
+        "i love animals and have two dogs.",
+        "i am native american and live in oklahoma.",
+        "i work as an attorney.",
+        "i am not religious."
+      ],
+      "context": {
+        "queries": [
+          "hey there . how are you ?",
+          "yeah , i like cats . i have one .",
+          "i stay at home with the kids .",
+          "no . do you like tv ?",
+          "really anything , what about you ?",
+          "i am not a very active person .",
+          "oh . tell me something about yourself .",
+          "i am a boring person ."
+        ],
+        "responses": [
+          "good , do you like animals ?",
+          "i have 2 dogs , they are great , where do you work ?",
+          "are you afraid of heights ? i certainly am",
+          "sure i like tv , what do you watch ?",
+          "i do not have time to watch tv , i am an attorney so i work alot",
+          "i certainly am , i am part native american , i live here in oklahoma",
+          "well i do not like heights very much and i love animals . what about you ?"
+        ]
+      },
+      "reference": "i am not much fun either . so what else is new with you ?",
+      "generated": "1.0Bot: 1.0Bot: are you afraid of heights are afraid of heights...........................................",
+      "score": 1.0,
+      "ppl": 209.13
+    },
+    {
+      "dialogue_idx": 5,
+      "turn_idx": 0,
+      "persona": [
+        "my favorite music is jazz.",
+        "i am a pediatrician.",
+        "i am married and have two kids of my own.",
+        "i love running and reading.",
+        "i also love vintage cars."
+      ],
+      "context": {
+        "queries": [
+          "hi how are you doing"
+        ],
+        "responses": []
+      },
+      "reference": "i am well . how about you ?",
+      "generated": "1.0Bot:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::",
+      "score": 1.0,
+      "ppl": 884.39
+    },
+    {
+      "dialogue_idx": 5,
+      "turn_idx": 1,
+      "persona": [
+        "my favorite music is jazz.",
+        "i am a pediatrician.",
+        "i am married and have two kids of my own.",
+        "i love running and reading.",
+        "i also love vintage cars."
+      ],
+      "context": {
+        "queries": [
+          "hi how are you doing",
+          "i am good getting ready for work"
+        ],
+        "responses": [
+          "i am well . how about you ?"
+        ]
+      },
+      "reference": "me too . what do you do for a living ?",
+      "generated": "::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::",
+      "score": 1.0,
+      "ppl": 1838.21
+    },
+    {
+      "dialogue_idx": 5,
+      "turn_idx": 2,
+      "persona": [
+        "my favorite music is jazz.",
+        "i am a pediatrician.",
+        "i am married and have two kids of my own.",
+        "i love running and reading.",
+        "i also love vintage cars."
+      ],
+      "context": {
+        "queries": [
+          "hi how are you doing",
+          "i am good getting ready for work",
+          "i am a lawyer long hours"
+        ],
+        "responses": [
+          "i am well . how about you ?",
+          "me too . what do you do for a living ?"
+        ]
+      },
+      "reference": "i get that ! i am a doctor . pediatrics to be exact . do anything for fun ?",
+      "generated": "Score: 1: 1: 1: 1: 1: 1: 1: 1: 1: 1: 1: 1: 1: 1: 1: 1: 1: 1: 1: 1: 1: 1: 1: 1: 1: 1: 1: 1: 1: 1: 1:",
+      "score": 1.0,
+      "ppl": 2947.76
+    },
+    {
+      "dialogue_idx": 5,
+      "turn_idx": 3,
+      "persona": [
+        "my favorite music is jazz.",
+        "i am a pediatrician.",
+        "i am married and have two kids of my own.",
+        "i love running and reading.",
+        "i also love vintage cars."
+      ],
+      "context": {
+        "queries": [
+          "hi how are you doing",
+          "i am good getting ready for work",
+          "i am a lawyer long hours",
+          "i like to go running with my dogs"
+        ],
+        "responses": [
+          "i am well . how about you ?",
+          "me too . what do you do for a living ?",
+          "i get that ! i am a doctor . pediatrics to be exact . do anything for fun ?"
+        ]
+      },
+      "reference": "me too ! well , i do not have any dogs , but i run everyday !",
+      "generated": "1.0Bot: 1.0Bot: with my dogs with my dogs with my dogs with my dogs with my dogs with my dogs with my dogs with my dogs with my dogs with my dogs with my dogs with my dogs with my dogs with my dogs with my dogs with my dogs with my dogs with",
+      "score": 1.0,
+      "ppl": 301.2
+    },
+    {
+      "dialogue_idx": 5,
+      "turn_idx": 4,
+      "persona": [
+        "my favorite music is jazz.",
+        "i am a pediatrician.",
+        "i am married and have two kids of my own.",
+        "i love running and reading.",
+        "i also love vintage cars."
+      ],
+      "context": {
+        "queries": [
+          "hi how are you doing",
+          "i am good getting ready for work",
+          "i am a lawyer long hours",
+          "i like to go running with my dogs",
+          "its such a great way to exercise and spend time outside"
+        ],
+        "responses": [
+          "i am well . how about you ?",
+          "me too . what do you do for a living ?",
+          "i get that ! i am a doctor . pediatrics to be exact . do anything for fun ?",
+          "me too ! well , i do not have any dogs , but i run everyday !"
+        ]
+      },
+      "reference": "yes , it helps me clear my mind . i also love to read to escape reality sometimes too",
+      "generated": "1.0Bot: 1.0Bot: 1.0Bot: 1.0Bot: i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i",
+      "score": 1.0,
+      "ppl": 1835.04
+    },
+    {
+      "dialogue_idx": 5,
+      "turn_idx": 5,
+      "persona": [
+        "my favorite music is jazz.",
+        "i am a pediatrician.",
+        "i am married and have two kids of my own.",
+        "i love running and reading.",
+        "i also love vintage cars."
+      ],
+      "context": {
+        "queries": [
+          "hi how are you doing",
+          "i am good getting ready for work",
+          "i am a lawyer long hours",
+          "i like to go running with my dogs",
+          "its such a great way to exercise and spend time outside",
+          "yeah ! what state do you live in"
+        ],
+        "responses": [
+          "i am well . how about you ?",
+          "me too . what do you do for a living ?",
+          "i get that ! i am a doctor . pediatrics to be exact . do anything for fun ?",
+          "me too ! well , i do not have any dogs , but i run everyday !",
+          "yes , it helps me clear my mind . i also love to read to escape reality sometimes too"
+        ]
+      },
+      "reference": "california . where do you live ?",
+      "generated": "1.0Bot: yeah yeah yeah yeah yeah yeah yeah yeah yeah yeahScore: 1.0Bot: 1.0Bot: 1.0Bot: 1.0Bot: 1.0Bot: 1.0Bot: 1.0Bot: to be to be",
+      "score": 1.0,
+      "ppl": 254.28
+    },
+    {
+      "dialogue_idx": 5,
+      "turn_idx": 6,
+      "persona": [
+        "my favorite music is jazz.",
+        "i am a pediatrician.",
+        "i am married and have two kids of my own.",
+        "i love running and reading.",
+        "i also love vintage cars."
+      ],
+      "context": {
+        "queries": [
+          "hi how are you doing",
+          "i am good getting ready for work",
+          "i am a lawyer long hours",
+          "i like to go running with my dogs",
+          "its such a great way to exercise and spend time outside",
+          "yeah ! what state do you live in",
+          "oklahoma nice and flat i do not like heights"
+        ],
+        "responses": [
+          "i am well . how about you ?",
+          "me too . what do you do for a living ?",
+          "i get that ! i am a doctor . pediatrics to be exact . do anything for fun ?",
+          "me too ! well , i do not have any dogs , but i run everyday !",
+          "yes , it helps me clear my mind . i also love to read to escape reality sometimes too",
+          "california . where do you live ?"
+        ]
+      },
+      "reference": "lol . i am scared of heights too . do you like to listen to music ?",
+      "generated": "1.0Bot: 1.0Bot: 1.0Bot: 1.0Bot: 1.0Bot: 1.0Bot: to be to be to be to be to be to be to be to be to be to be to be to be to be to be",
+      "score": 1.0,
+      "ppl": 96.33
+    },
+    {
+      "dialogue_idx": 5,
+      "turn_idx": 7,
+      "persona": [
+        "my favorite music is jazz.",
+        "i am a pediatrician.",
+        "i am married and have two kids of my own.",
+        "i love running and reading.",
+        "i also love vintage cars."
+      ],
+      "context": {
+        "queries": [
+          "hi how are you doing",
+          "i am good getting ready for work",
+          "i am a lawyer long hours",
+          "i like to go running with my dogs",
+          "its such a great way to exercise and spend time outside",
+          "yeah ! what state do you live in",
+          "oklahoma nice and flat i do not like heights",
+          "yeah what are you listening to right now"
+        ],
+        "responses": [
+          "i am well . how about you ?",
+          "me too . what do you do for a living ?",
+          "i get that ! i am a doctor . pediatrics to be exact . do anything for fun ?",
+          "me too ! well , i do not have any dogs , but i run everyday !",
+          "yes , it helps me clear my mind . i also love to read to escape reality sometimes too",
+          "california . where do you live ?",
+          "lol . i am scared of heights too . do you like to listen to music ?"
+        ]
+      },
+      "reference": "jazz . i love the smooth tunes !",
+      "generated": "right now..............................................................",
+      "score": 1.0,
+      "ppl": 1828.8
+    },
+    {
+      "dialogue_idx": 6,
+      "turn_idx": 0,
+      "persona": [
+        "i have a father and a brother.",
+        "my favourite food is sushi.",
+        "i listen to rap music.",
+        "i like to work out."
+      ],
+      "context": {
+        "queries": [
+          "hi , do you have sons ? i have two ."
+        ],
+        "responses": []
+      },
+      "reference": "a younger brother and no children is all . besides dad",
+      "generated": "1.0Bot:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::",
+      "score": 1.0,
+      "ppl": 18430.29
+    },
+    {
+      "dialogue_idx": 6,
+      "turn_idx": 1,
+      "persona": [
+        "i have a father and a brother.",
+        "my favourite food is sushi.",
+        "i listen to rap music.",
+        "i like to work out."
+      ],
+      "context": {
+        "queries": [
+          "hi , do you have sons ? i have two .",
+          "i will be in a school of hairdresser , i also own a fish aquarium"
+        ],
+        "responses": [
+          "a younger brother and no children is all . besides dad"
+        ]
+      },
+      "reference": "really . fish raw is my meal . what kind of fish ?",
+      "generated": "::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::",
+      "score": 1.0,
+      "ppl": 4555.36
+    },
+    {
+      "dialogue_idx": 6,
+      "turn_idx": 2,
+      "persona": [
+        "i have a father and a brother.",
+        "my favourite food is sushi.",
+        "i listen to rap music.",
+        "i like to work out."
+      ],
+      "context": {
+        "queries": [
+          "hi , do you have sons ? i have two .",
+          "i will be in a school of hairdresser , i also own a fish aquarium",
+          "i love exotic fish , you have a nice family ."
+        ],
+        "responses": [
+          "a younger brother and no children is all . besides dad",
+          "really . fish raw is my meal . what kind of fish ?"
+        ]
+      },
+      "reference": "my family is nice . we spend time at the weight room a lot",
+      "generated": ":::::::::: 1: 1: 1: 1: 1: 1: 1: 1: 1: 1: 1: 1: 1: 1: 1: 1: 1: 1: 1: 1: 1: 1: 1: 1: 1: 1: 1:",
+      "score": 1.0,
+      "ppl": 5823.93
+    },
+    {
+      "dialogue_idx": 6,
+      "turn_idx": 3,
+      "persona": [
+        "i have a father and a brother.",
+        "my favourite food is sushi.",
+        "i listen to rap music.",
+        "i like to work out."
+      ],
+      "context": {
+        "queries": [
+          "hi , do you have sons ? i have two .",
+          "i will be in a school of hairdresser , i also own a fish aquarium",
+          "i love exotic fish , you have a nice family .",
+          "i love the 1950 era and the decorations of that era"
+        ],
+        "responses": [
+          "a younger brother and no children is all . besides dad",
+          "really . fish raw is my meal . what kind of fish ?",
+          "my family is nice . we spend time at the weight room a lot"
+        ]
+      },
+      "reference": "we work out to hip hop artists and i love the 1990 era",
+      "generated": "1.0Bot: 1.0Bot: 1.0Bot: 1.0Bot: 1.0Bot: 1.0Bot: 1.0Bot: 1.0Bot:0Bot: 1.0Bot: 1.User: my",
+      "score": 1.0,
+      "ppl": 6928.07
+    },
+    {
+      "dialogue_idx": 6,
+      "turn_idx": 4,
+      "persona": [
+        "i have a father and a brother.",
+        "my favourite food is sushi.",
+        "i listen to rap music.",
+        "i like to work out."
+      ],
+      "context": {
+        "queries": [
+          "hi , do you have sons ? i have two .",
+          "i will be in a school of hairdresser , i also own a fish aquarium",
+          "i love exotic fish , you have a nice family .",
+          "i love the 1950 era and the decorations of that era",
+          "it is a nice family event and healthy too"
+        ],
+        "responses": [
+          "a younger brother and no children is all . besides dad",
+          "really . fish raw is my meal . what kind of fish ?",
+          "my family is nice . we spend time at the weight room a lot",
+          "we work out to hip hop artists and i love the 1990 era"
+        ]
+      },
+      "reference": "yes it is . i cherish those moments .",
+      "generated": "1.0Bot: 1.0Bot: 1.0Bot: 1.0Bot: 1.0Bot: 1.User: i i i i i i i i i i i i i i i i i i i i i i i i i i i i i",
+      "score": 1.0,
+      "ppl": 477.17
+    },
+    {
+      "dialogue_idx": 6,
+      "turn_idx": 5,
+      "persona": [
+        "i have a father and a brother.",
+        "my favourite food is sushi.",
+        "i listen to rap music.",
+        "i like to work out."
+      ],
+      "context": {
+        "queries": [
+          "hi , do you have sons ? i have two .",
+          "i will be in a school of hairdresser , i also own a fish aquarium",
+          "i love exotic fish , you have a nice family .",
+          "i love the 1950 era and the decorations of that era",
+          "it is a nice family event and healthy too",
+          "you are so much younger than me"
+        ],
+        "responses": [
+          "a younger brother and no children is all . besides dad",
+          "really . fish raw is my meal . what kind of fish ?",
+          "my family is nice . we spend time at the weight room a lot",
+          "we work out to hip hop artists and i love the 1990 era",
+          "yes it is . i cherish those moments ."
+        ]
+      },
+      "reference": "am i how much younger ? how old are you ?",
+      "generated": "1.0Bot: you younger younger younger younger younger younger younger younger younger younger younger younger younger younger younger younger younger younger younger younger younger younger younger younger younger younger younger younger younger younger younger younger younger younger younger younger younger younger younger younger younger younger younger younger younger younger younger younger younger younger younger younger younger younger younger younger younger",
+      "score": 1.0,
+      "ppl": 431.7
+    },
+    {
+      "dialogue_idx": 6,
+      "turn_idx": 6,
+      "persona": [
+        "i have a father and a brother.",
+        "my favourite food is sushi.",
+        "i listen to rap music.",
+        "i like to work out."
+      ],
+      "context": {
+        "queries": [
+          "hi , do you have sons ? i have two .",
+          "i will be in a school of hairdresser , i also own a fish aquarium",
+          "i love exotic fish , you have a nice family .",
+          "i love the 1950 era and the decorations of that era",
+          "it is a nice family event and healthy too",
+          "you are so much younger than me",
+          "i bet you do not eat granola in the morning"
+        ],
+        "responses": [
+          "a younger brother and no children is all . besides dad",
+          "really . fish raw is my meal . what kind of fish ?",
+          "my family is nice . we spend time at the weight room a lot",
+          "we work out to hip hop artists and i love the 1990 era",
+          "yes it is . i cherish those moments .",
+          "am i how much younger ? how old are you ?"
+        ]
+      },
+      "reference": "no i do not . only fruit and coconut juice . also , water and supplements",
+      "generated": "1.0Bot: 1.0Bot: 1.0Bot: nice. nice. nice nice nice nice nice nice nice nice nice nice nice nice nice nice nice nice nice nice nice nice nice nice nice nice nice nice nice nice nice nice nice nice nice nice nice nice nice nice nice nice nice nice",
+      "score": 1.0,
+      "ppl": 1438.45
+    },
+    {
+      "dialogue_idx": 6,
+      "turn_idx": 7,
+      "persona": [
+        "i have a father and a brother.",
+        "my favourite food is sushi.",
+        "i listen to rap music.",
+        "i like to work out."
+      ],
+      "context": {
+        "queries": [
+          "hi , do you have sons ? i have two .",
+          "i will be in a school of hairdresser , i also own a fish aquarium",
+          "i love exotic fish , you have a nice family .",
+          "i love the 1950 era and the decorations of that era",
+          "it is a nice family event and healthy too",
+          "you are so much younger than me",
+          "i bet you do not eat granola in the morning",
+          "i eat that daily younger folks can not stand it"
+        ],
+        "responses": [
+          "a younger brother and no children is all . besides dad",
+          "really . fish raw is my meal . what kind of fish ?",
+          "my family is nice . we spend time at the weight room a lot",
+          "we work out to hip hop artists and i love the 1990 era",
+          "yes it is . i cherish those moments .",
+          "am i how much younger ? how old are you ?",
+          "no i do not . only fruit and coconut juice . also , water and supplements"
+        ]
+      },
+      "reference": "that is what is good for the body and spirit .",
+      "generated": "nice nice nice nice nice nice nice nice nice nice nice nice nice nice nice nice nice nice nice nice nice nice nice nice nice nice nice nice nice nice nice nice nice nice nice nice nice nice nice nice nice nice nice nice nice nice nice nice nice nice nice nice nice nice nice nice nice nice nice nice nice nice nice nice",
+      "score": 1.0,
+      "ppl": 1328.51
+    },
+    {
+      "dialogue_idx": 7,
+      "turn_idx": 0,
+      "persona": [
+        "i want to be successful.",
+        "i have got two more years in college.",
+        "i study law.",
+        "i have no siblings.",
+        "i am a student."
+      ],
+      "context": {
+        "queries": [
+          "my mom had me in mcdonald bathroom when she was 12"
+        ],
+        "responses": []
+      },
+      "reference": "that is really sad . do you have any siblings",
+      "generated": "1.0Bot:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::",
+      "score": 1.0,
+      "ppl": 10065.16
+    },
+    {
+      "dialogue_idx": 7,
+      "turn_idx": 1,
+      "persona": [
+        "i want to be successful.",
+        "i have got two more years in college.",
+        "i study law.",
+        "i have no siblings.",
+        "i am a student."
+      ],
+      "context": {
+        "queries": [
+          "my mom had me in mcdonald bathroom when she was 12",
+          "no . my uncle is the manager and took me home ."
+        ],
+        "responses": [
+          "that is really sad . do you have any siblings"
+        ]
+      },
+      "reference": "that was nice of him . i am almost done with college",
+      "generated": "::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::",
+      "score": 1.0,
+      "ppl": 2398.31
+    },
+    {
+      "dialogue_idx": 7,
+      "turn_idx": 2,
+      "persona": [
+        "i want to be successful.",
+        "i have got two more years in college.",
+        "i study law.",
+        "i have no siblings.",
+        "i am a student."
+      ],
+      "context": {
+        "queries": [
+          "my mom had me in mcdonald bathroom when she was 12",
+          "no . my uncle is the manager and took me home .",
+          "he gave me a job at mcdonalds . i was considering college but i am good now ."
+        ],
+        "responses": [
+          "that is really sad . do you have any siblings",
+          "that was nice of him . i am almost done with college"
+        ]
+      },
+      "reference": "i am almost done i only have two years left in law school .",
+      "generated": "Bot: 1.0Bot: he gave me a job at college at college at college at college at college at college at college at college at college at college at college at college at college at college at college at college at college at college at college at college at college at college at college at college at college",
+      "score": 1.0,
+      "ppl": 656.65
+    },
+    {
+      "dialogue_idx": 7,
+      "turn_idx": 3,
+      "persona": [
+        "i want to be successful.",
+        "i have got two more years in college.",
+        "i study law.",
+        "i have no siblings.",
+        "i am a student."
+      ],
+      "context": {
+        "queries": [
+          "my mom had me in mcdonald bathroom when she was 12",
+          "no . my uncle is the manager and took me home .",
+          "he gave me a job at mcdonalds . i was considering college but i am good now .",
+          "you be smart . i would like to do something different but i team leader now ."
+        ],
+        "responses": [
+          "that is really sad . do you have any siblings",
+          "that was nice of him . i am almost done with college",
+          "i am almost done i only have two years left in law school ."
+        ]
+      },
+      "reference": "that sounds important . maybe one day you will go back to school",
+      "generated": "1.0Bot: 1.0Bot: 1.0Bot: 1.0Bot: 1.0Bot: i i i i i i i i i i i i i i i i i i i had i had i had i had i had i had i had i had",
+      "score": 1.0,
+      "ppl": 2809.66
+    },
+    {
+      "dialogue_idx": 7,
+      "turn_idx": 4,
+      "persona": [
+        "i want to be successful.",
+        "i have got two more years in college.",
+        "i study law.",
+        "i have no siblings.",
+        "i am a student."
+      ],
+      "context": {
+        "queries": [
+          "my mom had me in mcdonald bathroom when she was 12",
+          "no . my uncle is the manager and took me home .",
+          "he gave me a job at mcdonalds . i was considering college but i am good now .",
+          "you be smart . i would like to do something different but i team leader now .",
+          "i dropped out to work . maybe you can help me sure my mom for abandoning me ?"
+        ],
+        "responses": [
+          "that is really sad . do you have any siblings",
+          "that was nice of him . i am almost done with college",
+          "i am almost done i only have two years left in law school .",
+          "that sounds important . maybe one day you will go back to school"
+        ]
+      },
+      "reference": "i do not know if we would be able to do anything because is has been so long",
+      "generated": "i i i i i i i can help me abandon me abandon me abandon me abandon me abandon me i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i",
+      "score": 1.0,
+      "ppl": 291.57
+    },
+    {
+      "dialogue_idx": 7,
+      "turn_idx": 5,
+      "persona": [
+        "i want to be successful.",
+        "i have got two more years in college.",
+        "i study law.",
+        "i have no siblings.",
+        "i am a student."
+      ],
+      "context": {
+        "queries": [
+          "my mom had me in mcdonald bathroom when she was 12",
+          "no . my uncle is the manager and took me home .",
+          "he gave me a job at mcdonalds . i was considering college but i am good now .",
+          "you be smart . i would like to do something different but i team leader now .",
+          "i dropped out to work . maybe you can help me sure my mom for abandoning me ?",
+          "oh i am only 15 right now . is that too old ?"
+        ],
+        "responses": [
+          "that is really sad . do you have any siblings",
+          "that was nice of him . i am almost done with college",
+          "i am almost done i only have two years left in law school .",
+          "that sounds important . maybe one day you will go back to school",
+          "i do not know if we would be able to do anything because is has been so long"
+        ]
+      },
+      "reference": "do not you have to be older than 15 to work at mcdonalds ? that sounds illegal",
+      "generated": "1.0Bot: 1.0Bot: 1.0Bot: 1.0Bot: i am considering considering considering considering considering considering considering considering considering considering considering considering considering considering considering considering considering considering considering considering considering considering considering considering considering considering considering considering considering considering considering considering considering considering considering considering considering considering",
+      "score": 1.0,
+      "ppl": 379.32
+    },
+    {
+      "dialogue_idx": 7,
+      "turn_idx": 6,
+      "persona": [
+        "i want to be successful.",
+        "i have got two more years in college.",
+        "i study law.",
+        "i have no siblings.",
+        "i am a student."
+      ],
+      "context": {
+        "queries": [
+          "my mom had me in mcdonald bathroom when she was 12",
+          "no . my uncle is the manager and took me home .",
+          "he gave me a job at mcdonalds . i was considering college but i am good now .",
+          "you be smart . i would like to do something different but i team leader now .",
+          "i dropped out to work . maybe you can help me sure my mom for abandoning me ?",
+          "oh i am only 15 right now . is that too old ?",
+          "nah i do homeschool . uncle figured out how to make me work and takes the money ."
+        ],
+        "responses": [
+          "that is really sad . do you have any siblings",
+          "that was nice of him . i am almost done with college",
+          "i am almost done i only have two years left in law school .",
+          "that sounds important . maybe one day you will go back to school",
+          "i do not know if we would be able to do anything because is has been so long",
+          "do not you have to be older than 15 to work at mcdonalds ? that sounds illegal"
+        ]
+      },
+      "reference": "that is horrible and verry illegal",
+      "generated": "1.0Bot: 1.0Bot: 1.0Bot: 1.0Bot: 1.0Bot: 1.0Bot: 1.0Bot: 1.0Bot: 1.0Bot: 1.0Bot: 1.0",
+      "score": 1.0,
+      "ppl": 5206.28
+    },
+    {
+      "dialogue_idx": 7,
+      "turn_idx": 7,
+      "persona": [
+        "i want to be successful.",
+        "i have got two more years in college.",
+        "i study law.",
+        "i have no siblings.",
+        "i am a student."
+      ],
+      "context": {
+        "queries": [
+          "my mom had me in mcdonald bathroom when she was 12",
+          "no . my uncle is the manager and took me home .",
+          "he gave me a job at mcdonalds . i was considering college but i am good now .",
+          "you be smart . i would like to do something different but i team leader now .",
+          "i dropped out to work . maybe you can help me sure my mom for abandoning me ?",
+          "oh i am only 15 right now . is that too old ?",
+          "nah i do homeschool . uncle figured out how to make me work and takes the money .",
+          "really ? i am so glad i found you to help me ."
+        ],
+        "responses": [
+          "that is really sad . do you have any siblings",
+          "that was nice of him . i am almost done with college",
+          "i am almost done i only have two years left in law school .",
+          "that sounds important . maybe one day you will go back to school",
+          "i do not know if we would be able to do anything because is has been so long",
+          "do not you have to be older than 15 to work at mcdonalds ? that sounds illegal",
+          "that is horrible and verry illegal"
+        ]
+      },
+      "reference": "i would love to help . i am not able to practice yet though",
+      "generated": "1.0Bot: 1.0Bot: 1.0Bot: 1.0Bot: 1.",
+      "score": 1.0,
+      "ppl": 297.67
+    },
+    {
+      "dialogue_idx": 8,
+      "turn_idx": 0,
+      "persona": [
+        "my mom is a secretary.",
+        "i have one brother.",
+        "i am a bodybuilder.",
+        "i like to eat a lot of meat."
+      ],
+      "context": {
+        "queries": [
+          "hi there , how are you tonight ?"
+        ],
+        "responses": []
+      },
+      "reference": "great , i just finished a huge steak how are you ?",
+      "generated": "1.0Bot: 1: 1: 1: 1: 1: 1: 1: 1: 1: 1: 1: 1: 1: 1: 1: 1: 1: 1: 1: 1: 1: 1: 1: 1: 1: 1: 1: 1: 1:",
+      "score": 1.0,
+      "ppl": 5304.2
+    },
+    {
+      "dialogue_idx": 8,
+      "turn_idx": 1,
+      "persona": [
+        "my mom is a secretary.",
+        "i have one brother.",
+        "i am a bodybuilder.",
+        "i like to eat a lot of meat."
+      ],
+      "context": {
+        "queries": [
+          "hi there , how are you tonight ?",
+          "i am good , drinking some scotch ."
+        ],
+        "responses": [
+          "great , i just finished a huge steak how are you ?"
+        ]
+      },
+      "reference": "i am major meat eater to build muscles",
+      "generated": "::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::",
+      "score": 1.0,
+      "ppl": 80361.12
+    },
+    {
+      "dialogue_idx": 8,
+      "turn_idx": 2,
+      "persona": [
+        "my mom is a secretary.",
+        "i have one brother.",
+        "i am a bodybuilder.",
+        "i like to eat a lot of meat."
+      ],
+      "context": {
+        "queries": [
+          "hi there , how are you tonight ?",
+          "i am good , drinking some scotch .",
+          "oh , i like meat ok ."
+        ],
+        "responses": [
+          "great , i just finished a huge steak how are you ?",
+          "i am major meat eater to build muscles"
+        ]
+      },
+      "reference": "scotch goes good with meat",
+      "generated": "1.0Bot:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::",
+      "score": 1.0,
+      "ppl": 32781.8
+    },
+    {
+      "dialogue_idx": 8,
+      "turn_idx": 3,
+      "persona": [
+        "my mom is a secretary.",
+        "i have one brother.",
+        "i am a bodybuilder.",
+        "i like to eat a lot of meat."
+      ],
+      "context": {
+        "queries": [
+          "hi there , how are you tonight ?",
+          "i am good , drinking some scotch .",
+          "oh , i like meat ok .",
+          "scotch goes good with anything lol ."
+        ],
+        "responses": [
+          "great , i just finished a huge steak how are you ?",
+          "i am major meat eater to build muscles",
+          "scotch goes good with meat"
+        ]
+      },
+      "reference": "i have a brother who likes scotch",
+      "generated": ":::: 1.0Bot: scotch scotch scotch scotch scotch scotch scotch scotch scotch scotch scotch scotch scotch scotch scotch scotch scotch scotch",
+      "score": 1.0,
+      "ppl": 303.13
+    },
+    {
+      "dialogue_idx": 8,
+      "turn_idx": 4,
+      "persona": [
+        "my mom is a secretary.",
+        "i have one brother.",
+        "i am a bodybuilder.",
+        "i like to eat a lot of meat."
+      ],
+      "context": {
+        "queries": [
+          "hi there , how are you tonight ?",
+          "i am good , drinking some scotch .",
+          "oh , i like meat ok .",
+          "scotch goes good with anything lol .",
+          "i am an only child ."
+        ],
+        "responses": [
+          "great , i just finished a huge steak how are you ?",
+          "i am major meat eater to build muscles",
+          "scotch goes good with meat",
+          "i have a brother who likes scotch"
+        ]
+      },
+      "reference": "i have just the one brother and 3 sisters",
+      "generated": "i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i",
+      "score": 1.0,
+      "ppl": 680.34
+    },
+    {
+      "dialogue_idx": 8,
+      "turn_idx": 5,
+      "persona": [
+        "my mom is a secretary.",
+        "i have one brother.",
+        "i am a bodybuilder.",
+        "i like to eat a lot of meat."
+      ],
+      "context": {
+        "queries": [
+          "hi there , how are you tonight ?",
+          "i am good , drinking some scotch .",
+          "oh , i like meat ok .",
+          "scotch goes good with anything lol .",
+          "i am an only child .",
+          "do you have any pets ? i am scared of dogs ."
+        ],
+        "responses": [
+          "great , i just finished a huge steak how are you ?",
+          "i am major meat eater to build muscles",
+          "scotch goes good with meat",
+          "i have a brother who likes scotch",
+          "i have just the one brother and 3 sisters"
+        ]
+      },
+      "reference": "i have a cat and a dog you would not be scared of my dog",
+      "generated": "1.0Bot: 1.0Bot: 1.0Bot: 1.0Bot: 1.0Bot: 1.0Bot: 1.0Bot: great great great great great great great great great great great great great great great great great great great great great great",
+      "score": 1.0,
+      "ppl": 216.84
+    },
+    {
+      "dialogue_idx": 8,
+      "turn_idx": 6,
+      "persona": [
+        "my mom is a secretary.",
+        "i have one brother.",
+        "i am a bodybuilder.",
+        "i like to eat a lot of meat."
+      ],
+      "context": {
+        "queries": [
+          "hi there , how are you tonight ?",
+          "i am good , drinking some scotch .",
+          "oh , i like meat ok .",
+          "scotch goes good with anything lol .",
+          "i am an only child .",
+          "do you have any pets ? i am scared of dogs .",
+          "what do you do for a living ?"
+        ],
+        "responses": [
+          "great , i just finished a huge steak how are you ?",
+          "i am major meat eater to build muscles",
+          "scotch goes good with meat",
+          "i have a brother who likes scotch",
+          "i have just the one brother and 3 sisters",
+          "i have a cat and a dog you would not be scared of my dog"
+        ]
+      },
+      "reference": "i am a secretary like my mom hard living and you ?",
+      "generated": "1.0Bot: what do you do you?Bot: do you do you do you do you do you do you do you do you do you do you do you do you do you do you do you do you do you do you do you do you do you do you do you do you do",
+      "score": 1.0,
+      "ppl": 504.63
+    },
+    {
+      "dialogue_idx": 8,
+      "turn_idx": 7,
+      "persona": [
+        "my mom is a secretary.",
+        "i have one brother.",
+        "i am a bodybuilder.",
+        "i like to eat a lot of meat."
+      ],
+      "context": {
+        "queries": [
+          "hi there , how are you tonight ?",
+          "i am good , drinking some scotch .",
+          "oh , i like meat ok .",
+          "scotch goes good with anything lol .",
+          "i am an only child .",
+          "do you have any pets ? i am scared of dogs .",
+          "what do you do for a living ?",
+          "i am an author . i write short stories ."
+        ],
+        "responses": [
+          "great , i just finished a huge steak how are you ?",
+          "i am major meat eater to build muscles",
+          "scotch goes good with meat",
+          "i have a brother who likes scotch",
+          "i have just the one brother and 3 sisters",
+          "i have a cat and a dog you would not be scared of my dog",
+          "i am a secretary like my mom hard living and you ?"
+        ]
+      },
+      "reference": "do you want to write a story about a major meat eating bodybuilder ?",
+      "generated": "1.0Bot: 1.0Bot: 1.0Bot: 1.0Bot: 1.0Bot: 1.0Bot: scotch scotch scotch scotch scotch scotch scotch scotch scotch sc",
+      "score": 1.0,
+      "ppl": 646.06
+    },
+    {
+      "dialogue_idx": 9,
+      "turn_idx": 0,
+      "persona": [
+        "i like to go hunting.",
+        "i am a handyman.",
+        "i am allergic to shellfish.",
+        "i work for a company that rents properties.",
+        "i restore classic cars."
+      ],
+      "context": {
+        "queries": [
+          "how are you tonight , i just got back from hiking ."
+        ],
+        "responses": []
+      },
+      "reference": "i am great ! that is cool , i just got home from hunting .",
+      "generated": "::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::",
+      "score": 1.0,
+      "ppl": 1287.39
+    },
+    {
+      "dialogue_idx": 9,
+      "turn_idx": 1,
+      "persona": [
+        "i like to go hunting.",
+        "i am a handyman.",
+        "i am allergic to shellfish.",
+        "i work for a company that rents properties.",
+        "i restore classic cars."
+      ],
+      "context": {
+        "queries": [
+          "how are you tonight , i just got back from hiking .",
+          "so we both like outdoors , i am in ohio ."
+        ],
+        "responses": [
+          "i am great ! that is cool , i just got home from hunting ."
+        ]
+      },
+      "reference": "i do like the outdoors . . . as well as restoring classic cars . i am in missouri .",
+      "generated": "1.0Bot: 1.0Bot:::::::::::::::::::::::::::::::::::::::::::::::::::::",
+      "score": 1.0,
+      "ppl": 2067.58
+    },
+    {
+      "dialogue_idx": 9,
+      "turn_idx": 2,
+      "persona": [
+        "i like to go hunting.",
+        "i am a handyman.",
+        "i am allergic to shellfish.",
+        "i work for a company that rents properties.",
+        "i restore classic cars."
+      ],
+      "context": {
+        "queries": [
+          "how are you tonight , i just got back from hiking .",
+          "so we both like outdoors , i am in ohio .",
+          "when i am not in my office doing accounting , i am with my 2 boys ."
+        ],
+        "responses": [
+          "i am great ! that is cool , i just got home from hunting .",
+          "i do like the outdoors . . . as well as restoring classic cars . i am in missouri ."
+        ]
+      },
+      "reference": "that is good . i work as a handyman for a company that rents properties .",
+      "generated": "with my 2 boys with my 2 boys with my 2 boys with my 2 boys with my 2 boys with my 2 boys with my 2 boys with my 2 boys with my 2 boys with my 2 boys with my 2 boys with my 2 boys with my 2 boys with my 2 boys with my 2 boys with my 2 boys",
+      "score": 1.0,
+      "ppl": 4227.01
+    },
+    {
+      "dialogue_idx": 9,
+      "turn_idx": 3,
+      "persona": [
+        "i like to go hunting.",
+        "i am a handyman.",
+        "i am allergic to shellfish.",
+        "i work for a company that rents properties.",
+        "i restore classic cars."
+      ],
+      "context": {
+        "queries": [
+          "how are you tonight , i just got back from hiking .",
+          "so we both like outdoors , i am in ohio .",
+          "when i am not in my office doing accounting , i am with my 2 boys .",
+          "i wish i was handy , being a single mom and all ."
+        ],
+        "responses": [
+          "i am great ! that is cool , i just got home from hunting .",
+          "i do like the outdoors . . . as well as restoring classic cars . i am in missouri .",
+          "that is good . i work as a handyman for a company that rents properties ."
+        ]
+      },
+      "reference": "i am a single parent as well . just me and my baby girl .",
+      "generated": "1.0Bot: 1.0Bot: 1.0Bot: 1.0Bot: 1.0Bot: 1.0Bot: how are how are how are how are how are how how how how how how how how how how how how how how how how how how",
+      "score": 1.0,
+      "ppl": 407.06
+    },
+    {
+      "dialogue_idx": 9,
+      "turn_idx": 4,
+      "persona": [
+        "i like to go hunting.",
+        "i am a handyman.",
+        "i am allergic to shellfish.",
+        "i work for a company that rents properties.",
+        "i restore classic cars."
+      ],
+      "context": {
+        "queries": [
+          "how are you tonight , i just got back from hiking .",
+          "so we both like outdoors , i am in ohio .",
+          "when i am not in my office doing accounting , i am with my 2 boys .",
+          "i wish i was handy , being a single mom and all .",
+          "i would love a baby girl , it must be fun to go shopping ?"
+        ],
+        "responses": [
+          "i am great ! that is cool , i just got home from hunting .",
+          "i do like the outdoors . . . as well as restoring classic cars . i am in missouri .",
+          "that is good . i work as a handyman for a company that rents properties .",
+          "i am a single parent as well . just me and my baby girl ."
+        ]
+      },
+      "reference": "it is fun to go shopping for her",
+      "generated": "how are you how are you how are you how are you how are you how are you how are you how are you how are you how are you how are you how are you how are you how are you how are you how are you how are you how are you how are you how are you how are you how",
+      "score": 1.0,
+      "ppl": 897.79
+    },
+    {
+      "dialogue_idx": 9,
+      "turn_idx": 5,
+      "persona": [
+        "i like to go hunting.",
+        "i am a handyman.",
+        "i am allergic to shellfish.",
+        "i work for a company that rents properties.",
+        "i restore classic cars."
+      ],
+      "context": {
+        "queries": [
+          "how are you tonight , i just got back from hiking .",
+          "so we both like outdoors , i am in ohio .",
+          "when i am not in my office doing accounting , i am with my 2 boys .",
+          "i wish i was handy , being a single mom and all .",
+          "i would love a baby girl , it must be fun to go shopping ?",
+          "do you buy a lot of girl things , or more neutral ?"
+        ],
+        "responses": [
+          "i am great ! that is cool , i just got home from hunting .",
+          "i do like the outdoors . . . as well as restoring classic cars . i am in missouri .",
+          "that is good . i work as a handyman for a company that rents properties .",
+          "i am a single parent as well . just me and my baby girl .",
+          "it is fun to go shopping for her"
+        ]
+      },
+      "reference": "she happens to like pink a lot . . .",
+      "generated": "1.0Bot: 1.0Bot: 1.0Bot: 1.0Bot: i missouri i missouri i missouri i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i",
+      "score": 1.0,
+      "ppl": 1926.83
+    },
+    {
+      "dialogue_idx": 9,
+      "turn_idx": 6,
+      "persona": [
+        "i like to go hunting.",
+        "i am a handyman.",
+        "i am allergic to shellfish.",
+        "i work for a company that rents properties.",
+        "i restore classic cars."
+      ],
+      "context": {
+        "queries": [
+          "how are you tonight , i just got back from hiking .",
+          "so we both like outdoors , i am in ohio .",
+          "when i am not in my office doing accounting , i am with my 2 boys .",
+          "i wish i was handy , being a single mom and all .",
+          "i would love a baby girl , it must be fun to go shopping ?",
+          "do you buy a lot of girl things , or more neutral ?",
+          "i like lavender , but the boys not so much ."
+        ],
+        "responses": [
+          "i am great ! that is cool , i just got home from hunting .",
+          "i do like the outdoors . . . as well as restoring classic cars . i am in missouri .",
+          "that is good . i work as a handyman for a company that rents properties .",
+          "i am a single parent as well . just me and my baby girl .",
+          "it is fun to go shopping for her",
+          "she happens to like pink a lot . . ."
+        ]
+      },
+      "reference": "lol . i have bought neutral colored items for her but she likes girly clothes .",
+      "generated": "i missouri.............................................................",
+      "score": 1.0,
+      "ppl": 2668.83
+    }
+  ]
+}

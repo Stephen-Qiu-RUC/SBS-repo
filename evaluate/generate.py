@@ -68,7 +68,7 @@ def build_dgpt_prompt(persona_sentences, queries, responses, turn_idx,
 
     # Bot 回复开始标记
     tokens.append(vocab['<|sp2|>'])
-    tokens.extend(tokenizer("Bot: ")['input_ids'])
+    tokens.extend(tokenizer("Bot:")['input_ids'])
 
     return tokens
 
@@ -127,24 +127,20 @@ def build_llama_prompt(persona_sentences, queries, responses, turn_idx,
 
 
 def compute_ppl(model, input_ids, target_ids, device):
-    """计算给定输入序列下目标 token 的困惑度"""
+    """使用 HuggingFace 原生 loss 计算 PPL，将 prompt 部分 mask 掉只计算 target 的困惑度"""
     full_ids = input_ids + target_ids
     input_tensor = torch.tensor([full_ids]).to(device)
 
-    with torch.no_grad():
-        outputs = model(input_tensor)
-        logits = outputs.logits[0]  # [seq_len, vocab]
+    labels = input_tensor.clone()
+    labels[0, :len(input_ids)] = -100
 
-    # 对目标部分计算 loss
-    target_len = len(target_ids)
-    if target_len == 0:
+    with torch.no_grad():
+        outputs = model(input_tensor, labels=labels)
+        loss = outputs.loss
+
+    if loss is None or torch.isnan(loss):
         return float('nan')
 
-    shift_logits = logits[-(target_len + 1):-1]
-    shift_targets = input_tensor[0, -target_len:]
-
-    loss_fn = torch.nn.CrossEntropyLoss()
-    loss = loss_fn(shift_logits, shift_targets)
     return torch.exp(loss).item()
 
 
@@ -251,7 +247,7 @@ def main(model_path, test_data_path, output_path, scores, no_score,
                         persona, queries, responses, turn_idx,
                         score=score, tokenizer=tokenizer, vocab=vocab
                     )
-                    ref_tokens = tokenizer(ref_response)['input_ids'] + [vocab['<|endoftext|>']]
+                    ref_tokens = tokenizer(" " + ref_response)['input_ids'] + [vocab['<|endoftext|>']]
                 elif model_type == "llama":
                     prompt_tokens, assistant_header = build_llama_prompt(
                         persona, queries, responses, turn_idx,
